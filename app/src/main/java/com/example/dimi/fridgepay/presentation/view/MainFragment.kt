@@ -9,7 +9,7 @@ import android.widget.Toast
 
 import com.example.dimi.fridgepay.R
 import com.example.dimi.fridgepay.presentation.BaseFragment
-import com.example.dimi.fridgepay.presentation.adapters.ProductsAdapter
+import com.example.dimi.fridgepay.presentation.adapters.ProductsMainAdapter
 import com.example.dimi.fridgepay.presentation.presenter.MainPresenter
 import com.example.dimi.fridgepay.utils.ComponentManager
 import com.example.dimi.fridgepay.utils.visible
@@ -24,7 +24,7 @@ class MainFragment : BaseFragment() {
     lateinit var presenter: MainPresenter
 
     private val productsAdapter by lazy {
-        ProductsAdapter(
+        ProductsMainAdapter(
             clickProduct = presenter::productClicked,
             longClickProduct = presenter::productLongClicked
         )
@@ -81,6 +81,6 @@ class MainFragment : BaseFragment() {
 
     override fun onDestroy() {
         super.onDestroy()
-        presenter.disposeRxBinding()
+        presenter.dispodeRxBinding()
     }
 }

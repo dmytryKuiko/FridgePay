@@ -8,6 +8,8 @@ import io.reactivex.Observable
 
 interface MainPresenter : BasePresenter<List<ProductDisplayable>> {
 
+    fun dispodeRxBinding()
+
     fun getUiState(): LiveData<UiStateMain>
 
     fun getNotification(): LiveData<String>

@@ -55,7 +55,7 @@ class MainPresenterImpl
 
     override fun getNotification(): LiveData<String> = notificationSingleLiveData
 
-    override fun disposeRxBinding() {
+    override fun dispodeRxBinding() {
         rxBindingCompositeDisposable.clear()
         //Do not need to dispose compositeDisposable because we have only one activity
         // and presenter and other objects from domain and data layer for mainFragment have not to be destroyed

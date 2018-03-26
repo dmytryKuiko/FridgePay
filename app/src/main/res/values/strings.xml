@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Fridge Pay</string>
+    <string name="fragment_main_buy_button">Kaufen</string>
+    <string name="row_product_displayable_last_text">Andere Süßigkeiten kommen noch!</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

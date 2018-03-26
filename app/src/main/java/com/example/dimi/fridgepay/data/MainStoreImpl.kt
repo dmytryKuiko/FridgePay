@@ -11,6 +11,10 @@ class MainStoreImpl
     override fun getAllProducts(): Flowable<List<ProductDisplayable.Product>> =
         productDao.getAllProducts()
 
+    override fun deleteAllProducts() {
+        productDao.deleteAllProducts()
+    }
+
     override fun storeProduct(product: ProductDisplayable.Product) {
         productDao.insert(product)
     }

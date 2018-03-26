@@ -7,7 +7,10 @@ interface MainStore {
 
     fun getAllProducts(): Flowable<List<ProductDisplayable.Product>>
 
+    fun deleteAllProducts()
+
     fun storeProduct(product: ProductDisplayable.Product)
 
     fun deleteProduct(product: ProductDisplayable.Product)
+
 }

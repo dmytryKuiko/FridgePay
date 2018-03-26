@@ -9,6 +9,7 @@ import com.example.dimi.fridgepay.R
 import com.example.dimi.fridgepay.presentation.BaseFragment
 import com.example.dimi.fridgepay.presentation.presenter.BasketPresenter
 import com.example.dimi.fridgepay.utils.ComponentManager
+import com.example.dimi.fridgepay.utils.visible
 import kotlinx.android.synthetic.main.toolbar.*
 import javax.inject.Inject
 
@@ -28,8 +29,9 @@ class BasketFragment : BaseFragment() {
         super.onActivityCreated(savedInstanceState)
         presenter.getToolbarData().observe(this, Observer {
             it?.let {
-                toolbar_basket_button.visibility = it.basketVisibility
-                toolbar_back_button.visibility = it.backVisibility
+                toolbar_basket_button.visible(it.basketVisibility)
+                toolbar_back_button.visible(it.backVisibility)
+                toolbar_basket_count.visible(it.countBasketVisibility)
             }
         })
         toolbar_back_button.setOnClickListener { presenter.backClicked() }

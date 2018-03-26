@@ -2,6 +2,7 @@ package com.example.dimi.fridgepay.data
 
 import com.example.dimi.fridgepay.model.ProductDisplayable
 import com.example.dimi.fridgepay.model.ProductsParsed
+import io.reactivex.Completable
 import io.reactivex.Flowable
 import io.reactivex.Single
 import javax.inject.Inject
@@ -24,5 +25,9 @@ class MainRepositoryImpl
 
     override fun deleteProduct(product: ProductDisplayable.Product) {
         store.deleteProduct(product)
+    }
+
+    override fun buyProducts() {
+        store.deleteAllProducts()
     }
 }

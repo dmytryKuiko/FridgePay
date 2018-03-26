@@ -5,7 +5,9 @@ import android.content.Context
 import com.example.dimi.fridgepay.App
 import com.example.dimi.fridgepay.data.db.AppDatabase
 import com.example.dimi.fridgepay.data.db.ProductDao
+import com.example.dimi.fridgepay.utils.AndroidResourceManager
 import com.example.dimi.fridgepay.utils.AppSchedulers
+import com.example.dimi.fridgepay.utils.ResourceManager
 import com.example.dimi.fridgepay.utils.SchedulersProvider
 import dagger.Binds
 import dagger.Module
@@ -17,6 +19,9 @@ abstract class AppModule {
 
     @Binds
     internal abstract fun bindSchedulersProvider(appSchedulers: AppSchedulers): SchedulersProvider
+
+    @Binds
+    internal abstract fun bindResourceManager(manager: AndroidResourceManager): ResourceManager
 
     @Module
     companion object {

@@ -16,7 +16,7 @@ class BasketPresenterImpl
 
     init {
         toolbarLiveData.value =
-                ToolbarModel(backVisibility = View.VISIBLE, basketVisibility = View.INVISIBLE)
+                ToolbarModel(backVisibility = true, basketVisibility = false, countBasketVisibility = false)
     }
 
     override fun getToolbarData(): LiveData<ToolbarModel> = toolbarLiveData

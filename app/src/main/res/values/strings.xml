@@ -2,6 +2,7 @@
     <string name="app_name">Fridge Pay</string>
     <string name="fragment_main_buy_button">Kaufen</string>
     <string name="row_product_displayable_last_text">Andere Süßigkeiten kommen noch!</string>
+    <string name="fragment_main_toast_text">Guten Appetit!</string>
 
 
     <!-- TODO: Remove or change this placeholder text -->

@@ -14,7 +14,7 @@ abstract class ProductDao : BaseDao<ProductDisplayable.Product> {
     @Query("DELETE FROM ${TableNames.TABLE_PRODUCT}")
     abstract fun deleteAllProducts()
 
-    @Query("DELETE FROM ${TableNames.TABLE_PRODUCT} WHERE name = :name AND price = :price")
+    @Query("DELETE FROM ${TableNames.TABLE_PRODUCT} WHERE id = (SELECT id FROM ${TableNames.TABLE_PRODUCT} WHERE name = :name AND price = :price LIMIT 1 )")
     abstract fun deleteProduct(name: String, price: Double)
 
 //    @Query("DELETE FROM ${TableNames.TABLE_PRODUCT} WHERE name = :name AND price = :price LIMIT 1")

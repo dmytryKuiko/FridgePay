@@ -43,7 +43,8 @@ class BasketPresenterImpl
         interactor.getProductsPrice()
             .subscribe({
                 val priceText = resourceManager.getString(R.string.fragment_basket_price_text)
-                priceLiveData.postValue("$priceText $it")
+                val currency = resourceManager.getString(R.string.fragment_basket_euro_symbol)
+                priceLiveData.postValue("$priceText $it$currency")
                 priceLiveData::postValue
             }, (this::handleError))
             .addTo(compositeDisposable)

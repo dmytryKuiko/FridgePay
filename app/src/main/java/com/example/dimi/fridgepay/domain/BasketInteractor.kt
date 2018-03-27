@@ -6,4 +6,6 @@ import io.reactivex.Observable
 interface BasketInteractor {
 
     fun getProducts(): Observable<List<ProductDisplayable.Product>>
+
+    fun getProductsPrice(): Observable<Double>
 }

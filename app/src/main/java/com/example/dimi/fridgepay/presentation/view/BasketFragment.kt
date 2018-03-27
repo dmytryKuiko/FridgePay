@@ -53,6 +53,12 @@ class BasketFragment : BaseFragment() {
             getData().observe(this@BasketFragment, Observer {
                 it?.let { productsAdapter.setNewData(it)}
             })
+
+            getBasketPrice().observe(this@BasketFragment, Observer {
+                it?.let {
+                    fragment_basket_sum_text_view.text = it
+                }
+            })
         }
         toolbar_back_button.setOnClickListener { presenter.backClicked() }
     }

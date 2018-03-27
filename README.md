@@ -1,5 +1,12 @@
 # FridgePay
-Ich möchte ein bisschen erklären.
+Launcher icons  .png
+48 × 48 (mdpi)
+72 × 72 (hdpi)
+96 × 96 (xhdpi)
+144 × 144 (xxhdpi)
+192 × 192 (xxxhdpi)
+512 × 512 (Google Play store)	
+Ich möchte ein bisschen erklären.(Es gibt Kommentare in MainPresenterImpl, MainInteractorImpl)
 1) Tests wurden nicht definiert.
 2) Das Button Kaufen habe ich auf dem Screeen mit allen Produkte plaziert. Das ist schlechter für User Experience, aber man kann sehen, 
 dass das State des Buttons wird dznamisch geändert. Nicht nur wenn man das Screen mit gekäuften Produkte öffnet.

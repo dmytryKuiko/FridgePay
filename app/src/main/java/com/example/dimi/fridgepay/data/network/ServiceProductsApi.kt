@@ -1,6 +1,6 @@
-package com.example.dimi.fridgepay.data
+package com.example.dimi.fridgepay.data.network
 
-import com.example.dimi.fridgepay.di.modules.ProductsResponse
+import com.example.dimi.fridgepay.model.ProductsResponse
 import io.reactivex.Single
 import retrofit2.http.GET
 

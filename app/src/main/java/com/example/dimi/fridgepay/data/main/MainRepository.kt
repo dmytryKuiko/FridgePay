@@ -1,4 +1,4 @@
-package com.example.dimi.fridgepay.data
+package com.example.dimi.fridgepay.data.main
 
 import com.example.dimi.fridgepay.model.ProductDisplayable
 import com.example.dimi.fridgepay.model.ProductsParsed

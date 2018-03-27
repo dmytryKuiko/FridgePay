@@ -1,4 +1,4 @@
-package com.example.dimi.fridgepay.di.modules
+package com.example.dimi.fridgepay.model
 
 import com.example.dimi.fridgepay.model.Product
 

@@ -1,4 +1,4 @@
-package com.example.dimi.fridgepay.presentation.adapters
+package com.example.dimi.fridgepay.presentation.adapters.main
 
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
@@ -7,7 +7,6 @@ import android.view.ViewGroup
 import com.example.dimi.fridgepay.R
 import com.example.dimi.fridgepay.model.ProductDisplayable
 import com.hannesdorfmann.adapterdelegates3.AdapterDelegate
-import kotlinx.android.synthetic.main.row_product_displayable_product.view.*
 
 class ProductDisplayableLastAdapter : AdapterDelegate<MutableList<ProductDisplayable>>() {
     override fun onCreateViewHolder(parent: ViewGroup?): RecyclerView.ViewHolder =

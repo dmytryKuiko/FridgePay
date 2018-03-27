@@ -1,10 +1,9 @@
-package com.example.dimi.fridgepay.presentation.presenter
+package com.example.dimi.fridgepay.presentation.presenter.basket
 
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
-import android.view.View
 import com.example.dimi.fridgepay.R
-import com.example.dimi.fridgepay.domain.BasketInteractor
+import com.example.dimi.fridgepay.domain.basket.BasketInteractor
 import com.example.dimi.fridgepay.model.ProductDisplayable
 import com.example.dimi.fridgepay.model.ToolbarModel
 import com.example.dimi.fridgepay.utils.ResourceManager
@@ -43,7 +42,7 @@ class BasketPresenterImpl
         interactor.getProductsPrice()
             .subscribe({
                 val priceText = resourceManager.getString(R.string.fragment_basket_price_text)
-                val currency = resourceManager.getString(R.string.fragment_basket_euro_symbol)
+                val currency = resourceManager.getString(R.string.fragment_basket_currency_symbol)
                 priceLiveData.postValue("$priceText $it$currency")
                 priceLiveData::postValue
             }, (this::handleError))

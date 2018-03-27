@@ -1,12 +1,23 @@
 package com.example.dimi.fridgepay.di.modules
 
-import com.example.dimi.fridgepay.data.*
+import com.example.dimi.fridgepay.data.basket.BasketRepository
+import com.example.dimi.fridgepay.data.basket.BasketRepositoryImpl
+import com.example.dimi.fridgepay.data.basket.BasketStore
+import com.example.dimi.fridgepay.data.basket.BasketStoreImpl
+import com.example.dimi.fridgepay.data.main.MainRepository
+import com.example.dimi.fridgepay.data.main.MainRepositoryImpl
+import com.example.dimi.fridgepay.data.main.MainStore
+import com.example.dimi.fridgepay.data.main.MainStoreImpl
 import com.example.dimi.fridgepay.di.scopes.ActivityScope
-import com.example.dimi.fridgepay.domain.BasketInteractor
-import com.example.dimi.fridgepay.domain.BasketInteractorImpl
-import com.example.dimi.fridgepay.domain.MainInteractor
-import com.example.dimi.fridgepay.domain.MainInteractorImpl
+import com.example.dimi.fridgepay.domain.basket.BasketInteractor
+import com.example.dimi.fridgepay.domain.basket.BasketInteractorImpl
+import com.example.dimi.fridgepay.domain.main.MainInteractor
+import com.example.dimi.fridgepay.domain.main.MainInteractorImpl
 import com.example.dimi.fridgepay.presentation.presenter.*
+import com.example.dimi.fridgepay.presentation.presenter.basket.BasketPresenter
+import com.example.dimi.fridgepay.presentation.presenter.basket.BasketPresenterImpl
+import com.example.dimi.fridgepay.presentation.presenter.main.MainPresenter
+import com.example.dimi.fridgepay.presentation.presenter.main.MainPresenterImpl
 import dagger.Binds
 import dagger.Module
 

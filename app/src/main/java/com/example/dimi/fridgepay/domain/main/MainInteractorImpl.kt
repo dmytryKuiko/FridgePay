@@ -1,6 +1,6 @@
-package com.example.dimi.fridgepay.domain
+package com.example.dimi.fridgepay.domain.main
 
-import com.example.dimi.fridgepay.data.MainRepository
+import com.example.dimi.fridgepay.data.main.MainRepository
 import com.example.dimi.fridgepay.model.ProductDisplayable
 import com.example.dimi.fridgepay.model.ProductsParsed
 import com.example.dimi.fridgepay.model.ViewDynamicStateMain
@@ -12,7 +12,8 @@ import javax.inject.Inject
 
 class MainInteractorImpl
 @Inject constructor(private val repository: MainRepository,
-                    private val schedulers: SchedulersProvider) : MainInteractor {
+                    private val schedulers: SchedulersProvider) :
+    MainInteractor {
 
     override fun refreshProducts(): Single<ProductsParsed> =
         repository.getProducts()

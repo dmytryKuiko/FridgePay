@@ -1,4 +1,4 @@
-package com.example.dimi.fridgepay.domain
+package com.example.dimi.fridgepay.domain.basket
 
 import com.example.dimi.fridgepay.model.ProductDisplayable
 import io.reactivex.Observable

@@ -1,4 +1,4 @@
-package com.example.dimi.fridgepay.presentation.adapters
+package com.example.dimi.fridgepay.presentation.adapters.basket
 
 import com.example.dimi.fridgepay.model.ProductDisplayable
 import com.hannesdorfmann.adapterdelegates3.ListDelegationAdapter

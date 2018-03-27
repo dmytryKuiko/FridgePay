@@ -1,4 +1,4 @@
-package com.example.dimi.fridgepay.data
+package com.example.dimi.fridgepay.data.main
 
 import com.example.dimi.fridgepay.data.db.ProductDao
 import com.example.dimi.fridgepay.model.ProductDisplayable
@@ -6,7 +6,8 @@ import io.reactivex.Flowable
 import javax.inject.Inject
 
 class MainStoreImpl
-@Inject constructor(private val productDao: ProductDao) : MainStore {
+@Inject constructor(private val productDao: ProductDao) :
+    MainStore {
 
     override fun getAllProducts(): Flowable<List<ProductDisplayable.Product>> =
         productDao.getAllProducts()

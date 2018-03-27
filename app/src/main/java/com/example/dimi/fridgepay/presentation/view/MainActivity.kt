@@ -2,6 +2,7 @@ package com.example.dimi.fridgepay.presentation.view
 
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.widget.Toast
 import com.example.dimi.fridgepay.R
 import com.example.dimi.fridgepay.presentation.BaseActivity
 import com.example.dimi.fridgepay.presentation.BaseFragment
@@ -30,8 +31,8 @@ class MainActivity : BaseActivity() {
             this@MainActivity.finish()
         }
 
-        override fun showSystemMessage(message: String?) {
-            TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+        override fun showSystemMessage(message: String) {
+            Toast.makeText(this@MainActivity, message, Toast.LENGTH_LONG).show()
         }
 
         override fun createFragment(screenKey: String?, data: Any?): Fragment? =

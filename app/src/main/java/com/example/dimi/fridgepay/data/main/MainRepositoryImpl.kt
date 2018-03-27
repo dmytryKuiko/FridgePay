@@ -1,8 +1,8 @@
-package com.example.dimi.fridgepay.data
+package com.example.dimi.fridgepay.data.main
 
+import com.example.dimi.fridgepay.data.network.ServiceProductsApi
 import com.example.dimi.fridgepay.model.ProductDisplayable
 import com.example.dimi.fridgepay.model.ProductsParsed
-import io.reactivex.Completable
 import io.reactivex.Flowable
 import io.reactivex.Single
 import javax.inject.Inject

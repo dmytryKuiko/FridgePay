@@ -1,4 +1,4 @@
-package com.example.dimi.fridgepay.presentation.presenter
+package com.example.dimi.fridgepay.presentation.presenter.main
 
 import android.arch.lifecycle.LiveData
 import com.example.dimi.fridgepay.model.ProductDisplayable

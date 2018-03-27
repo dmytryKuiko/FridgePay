@@ -6,5 +6,4 @@ class ProductsParsed(val version: Int,
                      val placeHolderImagePath: String,
                      val currency: String,
                      val contentVolumeUnit: String,
-                     val listProducts: List<Product>) {
-}
+                     val listProducts: List<Product>)

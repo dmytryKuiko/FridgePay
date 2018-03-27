@@ -9,8 +9,8 @@ import android.widget.Toast
 
 import com.example.dimi.fridgepay.R
 import com.example.dimi.fridgepay.presentation.BaseFragment
-import com.example.dimi.fridgepay.presentation.adapters.ProductsMainAdapter
-import com.example.dimi.fridgepay.presentation.presenter.MainPresenter
+import com.example.dimi.fridgepay.presentation.adapters.main.ProductsMainAdapter
+import com.example.dimi.fridgepay.presentation.presenter.main.MainPresenter
 import com.example.dimi.fridgepay.utils.ComponentManager
 import com.example.dimi.fridgepay.utils.visible
 import com.jakewharton.rxbinding2.view.RxView
@@ -72,11 +72,11 @@ class MainFragment : BaseFragment() {
                     Toast.makeText(this@MainFragment.activity, it, Toast.LENGTH_LONG).show()
                 }
             })
+            listenBuyButton(RxView.clicks(fragment_main_buy_button))
         }
 
         toolbar_basket_button.setOnClickListener { presenter.basketClicked() }
         fragment_main_swipe_refresh_layout.setOnRefreshListener { presenter.swipeRefreshed() }
-        presenter.listenBuyButton(RxView.clicks(fragment_main_buy_button))
     }
 
     override fun onDestroy() {

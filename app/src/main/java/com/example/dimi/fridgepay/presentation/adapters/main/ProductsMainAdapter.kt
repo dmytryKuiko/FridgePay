@@ -1,4 +1,4 @@
-package com.example.dimi.fridgepay.presentation.adapters
+package com.example.dimi.fridgepay.presentation.adapters.main
 
 import com.example.dimi.fridgepay.model.ProductDisplayable
 import com.hannesdorfmann.adapterdelegates3.ListDelegationAdapter
@@ -11,7 +11,12 @@ class ProductsMainAdapter(
     init {
         items = mutableListOf()
         delegatesManager.run {
-            addDelegate(ProductDisplayableProductAdapter(clickProduct, longClickProduct))
+            addDelegate(
+                ProductDisplayableProductAdapter(
+                    clickProduct,
+                    longClickProduct
+                )
+            )
             addDelegate(ProductDisplayableLastAdapter())
         }
     }

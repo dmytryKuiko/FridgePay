@@ -1,6 +1,6 @@
-package com.example.dimi.fridgepay.domain
+package com.example.dimi.fridgepay.domain.basket
 
-import com.example.dimi.fridgepay.data.BasketRepository
+import com.example.dimi.fridgepay.data.basket.BasketRepository
 import com.example.dimi.fridgepay.model.ProductDisplayable
 import com.jakewharton.rxrelay2.BehaviorRelay
 import io.reactivex.Observable
@@ -8,7 +8,8 @@ import java.math.RoundingMode
 import javax.inject.Inject
 
 class BasketInteractorImpl
-@Inject constructor(private val repository: BasketRepository) : BasketInteractor {
+@Inject constructor(private val repository: BasketRepository) :
+    BasketInteractor {
 
     private val priceRelay: BehaviorRelay<Double> = BehaviorRelay.create()
 

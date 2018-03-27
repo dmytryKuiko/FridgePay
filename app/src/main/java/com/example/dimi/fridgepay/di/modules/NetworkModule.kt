@@ -1,6 +1,6 @@
 package com.example.dimi.fridgepay.di.modules
 
-import com.example.dimi.fridgepay.data.ServiceProductsApi
+import com.example.dimi.fridgepay.data.network.ServiceProductsApi
 import com.example.dimi.fridgepay.utils.SchedulersProvider
 import dagger.Module
 import dagger.Provides

@@ -8,8 +8,8 @@ import android.support.v7.widget.LinearLayoutManager
 
 import com.example.dimi.fridgepay.R
 import com.example.dimi.fridgepay.presentation.BaseFragment
-import com.example.dimi.fridgepay.presentation.adapters.ProductsBasketAdapter
-import com.example.dimi.fridgepay.presentation.presenter.BasketPresenter
+import com.example.dimi.fridgepay.presentation.adapters.basket.ProductsBasketAdapter
+import com.example.dimi.fridgepay.presentation.presenter.basket.BasketPresenter
 import com.example.dimi.fridgepay.utils.ComponentManager
 import com.example.dimi.fridgepay.utils.visible
 import kotlinx.android.synthetic.main.fragment_basket.*

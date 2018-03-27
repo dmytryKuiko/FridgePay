@@ -1,10 +1,10 @@
-package com.example.dimi.fridgepay.presentation.presenter
+package com.example.dimi.fridgepay.presentation.presenter.main
 
 import android.arch.lifecycle.LiveData
 import android.arch.lifecycle.MutableLiveData
 import com.example.dimi.fridgepay.R
-import com.example.dimi.fridgepay.domain.MainDomainMapper
-import com.example.dimi.fridgepay.domain.MainInteractor
+import com.example.dimi.fridgepay.domain.main.MainDomainMapper
+import com.example.dimi.fridgepay.domain.main.MainInteractor
 import com.example.dimi.fridgepay.model.ProductDisplayable
 import com.example.dimi.fridgepay.model.ToolbarModel
 import com.example.dimi.fridgepay.model.UiStateMain
